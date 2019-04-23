@@ -1,0 +1,12 @@
+[ 2019-03-09T10:43:04+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-09T14:25:25+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-09T14:51:07+08:00 ] 127.0.0.1 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2019-03-09T16:29:05+08:00 ] 127.0.0.1 /index.php/AdminImages/upload
+ERR: 无法加载模块:AdminImages
+

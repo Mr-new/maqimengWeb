@@ -1,0 +1,12 @@
+[ 2019-03-08T16:05:57+08:00 ] 127.0.0.1 /index.php/Admin/Login/isSession
+ERR: Call to a member function isLogin() on boolean
+
+[ 2019-03-08T16:06:18+08:00 ] 127.0.0.1 /index.php/Admin/Login/isSession
+ERR: Class 'Admin\Controller\CommonController' not found
+
+[ 2019-03-08T16:07:06+08:00 ] 127.0.0.1 /index.php/Admin/Login/isSession
+ERR: 无法加载控制器:Login
+
+[ 2019-03-08T16:25:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/isSession
+ERR: 非法操作:isSession
+

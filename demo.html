@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<link href="swiper/css/swiper.min.css" type="text/css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				transform-origin: center center;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+				font-family: "微软雅黑";
+			}
+			ul,li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			#wrap{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			#menu{
+				width: 40px;
+				float: right;
+				margin-top: 43px;
+				cursor: pointer;
+			}
+			#menu>li{
+				width: 40px;
+				height: 5px;
+				background-color: #333333;
+				margin-bottom: 7px;
+				transition: 0.8s;
+			}
+			#menu>li:first-of-type{
+				transform-origin: 3px center;
+			}
+			#menu>li:last-of-type{
+				transform-origin: 3px center;
+			}
+			#menuList{
+				width: 100%;
+				height: 200px;
+				overflow: hidden;
+				background-color: rgba(0,0,0,0.7);	
+				position: absolute;
+				top: -182%;
+				left: 0;
+				transition: 0.5s top;	
+				z-index: 99;	
+			}
+			
+			#menuList>li{
+				width: 100%;
+				height: 50px;
+				overflow: hidden;
+				text-align: center;
+				line-height: 50px;
+				
+				transition: 0.3s;
+				position: relative;
+				cursor: pointer;
+			}
+			#menuList>li>a{
+				display: block;
+				color: #FFFFFF;
+			}
+			#menuList>li>a>span{
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: #F3F3F3;
+				left: 0;
+				top: 100%;
+				transition: 0.3s top;
+				z-index: 0;
+			}
+			#menuList>li:hover>a{
+				color: black;
+			}
+			#menuList>li:hover>a>span{
+				top: 0;
+			}
+			.contentWidth{
+				width: 90%;
+				height: auto;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.head{
+				position: absolute;
+				width: 90%;
+				left: 5%;
+				height: 110px;
+				z-index: 999;
+			}
+			.head>a{
+				display: block;
+				float: left;
+			}
+			.head>a>img{
+				width: 120px;
+			}
+			.banner{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.banner>img{
+				width: 100%;
+				display: block;
+			}
+			/*swiper样式初始化*/
+			.swiper-container {
+		      width: 100%;
+		      height: 100%;
+		      margin-left: auto;
+		      margin-right: auto;
+		    }
+		    .swiper-slide {
+		      text-align: center;
+		      font-size: 18px;
+		      background: #fff;
+		
+		      /* Center slide text vertically */
+		      display: -webkit-box;
+		      display: -ms-flexbox;
+		      display: -webkit-flex;
+		      display: flex;
+		      -webkit-box-pack: center;
+		      -ms-flex-pack: center;
+		      -webkit-justify-content: center;
+		      justify-content: center;
+		      -webkit-box-align: center;
+		      -ms-flex-align: center;
+		      -webkit-align-items: center;
+		      align-items: center;
+		    }
+		    .bannerImg{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		    #title{
+		    	display: block;
+		    	text-decoration: none;
+		    	width: 40vw;
+		    	height: 10vw;
+		    	text-align: center;
+		    	line-height: 10vw;
+		    	background-color: rgba(0,0,0,0.6);
+		    	position: absolute;
+		    	top: 50%;
+		    	left: 50%;
+		    	margin-top: -5vw;
+		    	margin-left: -20vw;
+		    	z-index: 98;
+		    	font-size: 4.2vw;
+		    	color: #FFFFFF;
+		    	cursor: pointer;
+		    	transition: 1s;
+		    }
+		    
+		    
+			#title>span{
+				display: block;
+				position: absolute;
+				background-color: #000000;
+				transition: 1s;
+			}
+			#title>span:first-of-type{
+				left: 0;
+				top: 0;
+				height: 2px;
+				width: 0px;
+			}
+			#title:hover{
+				background-color: rgba(0,0,0,0);
+				color: #333333;
+			}
+			#title:hover>span:first-of-type{
+				width: 100%;
+			}
+			#title>span:nth-of-type(2){
+				right: 0;
+				top: 0;
+				height: 0px;
+				width: 2px;
+			}
+			#title:hover>span:nth-of-type(2){
+				height: 100%;
+			}
+			#title>span:nth-of-type(3){
+				right: 0;
+				bottom: 0;
+				height: 2px;
+				width: 0px;
+			}
+			#title:hover>span:nth-of-type(3){
+				width: 100%;
+			}
+			#title>span:last-of-type{
+				left: 0;
+				bottom: 0;
+				height: 0px;
+				width: 2px;
+			}
+			#title:hover>span:last-of-type{
+				height: 100%;
+			}
+			
+		</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript">
+			//横屏显示函数
+			function horizontalScreen(className){  
+			    // transform 强制横屏  
+			    var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+			    var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;  
+			    $(className).css({  
+			        "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",  
+			        "width":conH+"px",  
+			        "height":conW+"px",  
+			        "transform-origin":"center center",  
+			        "-webkit-transform-origin": "center center"  
+			    });  
+			}  
+			
+			
+			$(function(){
+				//如果可视宽度小于1024，则横屏显示
+				if($(window).height()>$(window).width()){
+					horizontalScreen("#wrap");
+				}
+				
+				var checked=false;
+				$("#menu").click(function(){
+					if(checked==false){
+						$("#menuList").css({"top":"104%"});
+						$("#menu>li:first").css({
+							"transform":"rotate(45deg)"
+						});
+						$("#menu>li:eq(1)").css("opacity","0");
+						$("#menu>li:eq(2)").css({
+							"transform":"rotate(-45deg)"
+						});
+						checked=true;
+					}else{
+						$("#menuList").css({"top":"-182%"});
+						$("#menu>li:first").css({
+							"transform":"rotate(0deg)"
+						});
+						$("#menu>li:eq(1)").css("opacity","1");
+						$("#menu>li:eq(2)").css({
+							"transform":"rotate(-0deg)"
+						});
+						checked=false;
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="head">
+				<a href="#">
+					<img src="img/logo.png">
+				</a>
+				<ul id="menu">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul id="menuList">
+					<li>
+						<a href="index.php">
+							首页
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="index.php">
+							服务范围
+							<span>服务范围</span>
+						</a>
+					</li>
+					<li>
+						<a href="index.php">
+							项目案例
+							<span>项目案例</span>
+						</a>
+					</li>
+					<li>
+						<a href="index.php">
+							关于我们
+							<span>关于我们</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="banner">
+				<!-- Swiper -->
+			  <div class="swiper-container" id="banner">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<img src="img/banner1.jpg" class="bannerImg">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="img/banner2.jpg" class="bannerImg">
+			      </div>
+			      <div class="swiper-slide">
+			      	<img src="img/banner3.jpg" class="bannerImg">
+			      </div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <!--<div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>-->
+			  </div>
+			  <script src="swiper/js/swiper.min.js" type="text/javascript"></script>
+			  <!--swiper轮播初始化-->
+			  <script type="text/javascript">
+			    var swiper = new Swiper('.swiper-container', {
+			      direction : 'vertical',
+			      effect: 'cube',
+			      mousewheel: true,
+			      slidesPerView: 1,
+			      spaceBetween: 30,
+			      speed:2000,
+			      loop: true,
+			      autoplay:true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			  </script>
+			</div>
+			<a href="xk.html" id="title">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				Hello World!
+			</a>
+		</div>
+	</body>
+</html>

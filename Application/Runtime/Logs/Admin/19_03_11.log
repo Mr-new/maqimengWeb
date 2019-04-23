@@ -1,0 +1,107 @@
+[ 2019-03-11T09:36:18+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 不存在的图像文件
+
+[ 2019-03-11T10:06:56+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['b_image'] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=Array['b_image'] ) LIMIT 1  
+
+[ 2019-03-11T10:06:59+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['b_image'] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=Array['b_image'] ) LIMIT 1  
+
+[ 2019-03-11T10:07:32+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['b_image'] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=Array['b_image'] ) LIMIT 1  
+
+[ 2019-03-11T10:08:14+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['b_image'] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=Array['b_image'] ) LIMIT 1  
+
+[ 2019-03-11T10:09:32+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['b_imgid'] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=Array['b_imgid'] ) LIMIT 1  
+
+[ 2019-03-11T10:22:54+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-03-11T10:22:58+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-03-11T10:31:08+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=3 )' at line 1
+ [ SQL语句 ] : UPDATE `my_images` SET  WHERE ( id=3 )
+
+[ 2019-03-11T10:32:48+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id=3 )' at line 1
+ [ SQL语句 ] : UPDATE `my_images` SET  WHERE ( id=3 )
+
+[ 2019-03-11T13:28:16+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T13:33:37+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T13:34:37+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T13:36:07+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T13:38:28+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T13:39:09+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1054:Unknown column 'undefined' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=undefined ) LIMIT 1  
+
+[ 2019-03-11T14:48:36+08:00 ] 127.0.0.1 /index.php/Admin/Banner/saveBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `my_banner` SET `b_title`='',`b_datetime`='2019-03-11 14:48:36' WHERE ( b_id= )
+
+[ 2019-03-11T14:49:42+08:00 ] 127.0.0.1 /index.php/Admin/Banner/saveBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `my_banner` SET `b_title`='',`b_datetime`='2019-03-11 14:49:42' WHERE ( b_id= )
+
+[ 2019-03-11T15:09:41+08:00 ] 127.0.0.1 /index.php/Admin/Banner/saveBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `my_banner` SET `b_title`='',`b_datetime`='2019-03-11 15:09:41' WHERE ( b_id= )
+
+[ 2019-03-11T15:15:19+08:00 ] 127.0.0.1 /index.php/Admin/Banner/saveBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `my_banner` SET `b_title`='',`b_datetime`='2019-03-11 15:15:19' WHERE ( b_id= )
+
+[ 2019-03-11T15:51:29+08:00 ] 127.0.0.1 /index.php/Admin/Banner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `b_imgid` FROM `my_banner` WHERE ( b_id= ) LIMIT 1  
+
+[ 2019-03-11T15:51:48+08:00 ] 127.0.0.1 /index.php/Admin/Banner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `b_imgid` FROM `my_banner` WHERE ( b_id= ) LIMIT 1  
+
+[ 2019-03-11T15:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Banner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `b_imgid` FROM `my_banner` WHERE ( b_id= ) LIMIT 1  
+
+[ 2019-03-11T15:53:17+08:00 ] 127.0.0.1 /index.php/Admin/Banner/deleteBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `b_imgid` FROM `my_banner` WHERE ( b_id= ) LIMIT 1  
+
+[ 2019-03-11T16:07:39+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList
+ERR: 1054:Unknown column 'b_imgid' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=b_imgid ) LIMIT 1  
+
+[ 2019-03-11T16:07:50+08:00 ] 127.0.0.1 /index.php/Admin/Banner/getBannerList?pageIndex=1&number=3
+ERR: 1054:Unknown column 'b_imgid' in 'where clause'
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id=b_imgid ) LIMIT 1  
+
+[ 2019-03-11T16:38:16+08:00 ] 127.0.0.1 /index.php/Admin/Banner/saveBanner
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `my_banner` SET `b_title`='',`b_datetime`='2019-03-11 16:38:16' WHERE ( b_id= )
+

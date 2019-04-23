@@ -1,0 +1,12 @@
+[ 2019-03-09T16:40:52+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1292:Incorrect datetime value: '2019-Mar-Sat 16:0:th' for column 'datetime' at row 1
+ [ SQL语句 ] : INSERT INTO `my_images` (`image`,`datetime`) VALUES ('2019-03-09/5c837c146d8f4.jpg','2019-Mar-Sat 16:0:th')
+
+[ 2019-03-09T16:41:01+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1292:Incorrect datetime value: '2019-Mar-Sat 16:0:th' for column 'datetime' at row 1
+ [ SQL语句 ] : INSERT INTO `my_images` (`image`,`datetime`) VALUES ('2019-03-09/5c837c1d46f53.jpg','2019-Mar-Sat 16:0:th')
+
+[ 2019-03-09T16:41:16+08:00 ] 127.0.0.1 /index.php/Admin/Images/upload
+ERR: 1292:Incorrect datetime value: '2019-Mar-Sat 04:41:16' for column 'datetime' at row 1
+ [ SQL语句 ] : INSERT INTO `my_images` (`image`,`datetime`) VALUES ('2019-03-09/5c837c2c62821.jpg','2019-Mar-Sat 04:41:16')
+

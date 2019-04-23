@@ -1,0 +1,43 @@
+[ 2019-03-15T10:43:53+08:00 ] 127.0.0.1 /index.php/Admin/Login/Login
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-03-15T10:44:55+08:00 ] 127.0.0.1 /index.php/Admin/Login/Login
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-03-15T10:46:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/Login?username=admin&password=admin123
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `image` FROM `my_images` WHERE ( id= ) LIMIT 1  
+
+[ 2019-03-15T15:06:27+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: Cannot use object of type Think\Model as array
+
+[ 2019-03-15T15:07:12+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: Cannot use object of type Think\Model as array
+
+[ 2019-03-15T15:07:36+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: Cannot use object of type Think\Model as array
+
+[ 2019-03-15T15:08:39+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: Cannot use object of type Think\Model as array
+
+[ 2019-03-15T15:31:29+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `my_admin_menu` WHERE ( pid= ) 
+
+[ 2019-03-15T15:55:01+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `my_admin_menu` WHERE ( pid= ) 
+
+[ 2019-03-15T15:56:19+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and pid=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `my_admin_menu` WHERE ( id= and pid=0 ) LIMIT 1  
+
+[ 2019-03-15T15:56:52+08:00 ] 127.0.0.1 /index.php/Admin/Menu/getMenuList?userId=3
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and pid=0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `my_admin_menu` WHERE ( id= and pid=0 ) LIMIT 1  
+
+[ 2019-03-15T16:03:20+08:00 ] 127.0.0.1 /index.php/Admin/Menu/Login
+ERR: 非法操作:Login
+

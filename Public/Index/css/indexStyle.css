@@ -1,0 +1,114 @@
+/*menu页面*/
+.lingan_1{  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 99;}
+.wrap{ display: flex; background: #49C9DE; width: 100%; height: 100%; justify-content: center; align-items: center; position: absolute; left: 0; top: 0; z-index: 0;}
+.wrap>ul{ width: 1100px; height: 40%; display: flex; justify-content: space-between; align-items: center;}
+.wrap>ul>li{ cursor: pointer; font-size: 1.1vw; transition: 0.8s; width: 220px; height: 220px; border: 1px solid #FFFFFF; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.wrap>ul>li>span:last-of-type{ transition: 0.8s transform; font-size: 0.8vw;}
+.wrap>ul>li:hover,#current1{ background-color: #fff;}
+.wrap>ul>li:hover>span,#current1>span{ color: #49C9DE}
+.wrap>ul>li:hover>span:last-of-type{  transform: rotateY(360deg);}
+.wrap>ul>li>span{ color: #fff;}
+#menu{ position: fixed; left: 30px; transition: 0.8s background-position; background: url("../images/menu.png") no-repeat -33px 10px; background-size: 80px 40px; z-index: 99; bottom: 30px; padding: 10px; cursor: pointer; width: 40px; height: 40px; display: block; border: 1px dashed #fff;}
+#menu:hover{ border-color: rgba(0,0,0,0);}
+.page{ width: 100%; height: 100%; background-color: #1A1A1A; position: absolute; left: 100%; top: 0; z-index: 0; color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#Home{ left: 0; overflow: hidden;}
+/*服务范围*/
+.content{ width: 80%; height: 60%; display: flex; justify-content: center; align-items: center;}
+.title{ text-align: center; font-size: 2vw;}
+.range{ width: 80%; height: 62%; display: flex; align-items: center; justify-content:space-around; flex-direction: row;}
+.range li{ border: 1px solid #1A1A1A; transition: 0.3s border-color; border-radius: 3px; width: 21%; height: 100%; cursor: pointer; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.range li span{ display: block; background-size: 100% 100%; width: 74px; height: 59px; margin-bottom: 20px; transition: 0.3s linear margin-bottom;}
+.range li p{ font-size: 1vw; color: #fff;}
+.range li:first-of-type span{ background: url("../images/pc_icon.png") no-repeat 0 0;}
+.range li:nth-of-type(2) span{ background: url("../images/iphone_icon.png") no-repeat 0 0;}
+.range li:last-of-type span{ background: url("../images/wx_icon.png") no-repeat 0 0;}
+.range li:hover{ border-color: #49C9DE;}
+.range li:hover span{ background-position: 0 -59px; margin-bottom: 10px;}
+.range li:hover p{ color: #49C9DE;}
+/*项目案例*/
+.project{ width: 70%; height: 80%;}
+.project_top{ width: 100%; height: 10%; display: flex; justify-content: center; align-items: center; margin-bottom: 2%;}
+.project_top li{ width: 12%; transition: 0.5s; height: 60%; border: 1px solid #fff; cursor: pointer; font-size: 1vw; margin-right: 2%; border-radius: 50px; display: flex; justify-content: center; align-items: center;}
+.project_top li:hover,#current{ background-color: #49C9DE; border-color: #49C9DE;}
+.case_wrap{ width: 100%; height: 86%;}
+.case{ width: 100%; height: 100%; margin: 0 auto; overflow-y: auto;}
+.case li{ width: 25%; cursor: pointer; height: 39%; border-radius: 3px; float: left; box-sizing: border-box; border: 1px solid #1A1A1A; overflow: hidden; position: relative;}
+.case li>img{ width: 100%; height: 100%; display: block; position: absolute; left: 0; top: 0; transition: 0.5s top; object-fit: cover}
+.case li span{ width: 100%; height: 100%; display: block; position: absolute; left: 0; top: 0; transition: 0.5s;}
+.case li span>img{ width: 40px; height: 40px; display: block; position: absolute; top: 15%; left: 50%; opacity: 0; margin-left: -20px; transition: 0.5s;}
+.case li p{ position: absolute; left: 0; bottom: -22%; width: 100%; height: 22%; background-color: #49C9DE; font-size: 0.8vw; display: flex; justify-content: center; align-items: center; transition: 0.5s bottom;}
+.case li:hover>img{ top:-22%;}
+.case li:hover span{ top:-22%; background-color: rgba(0,0,0,0.5);}
+.case li:hover span>img{ opacity: 1; top: 50%;}
+.case li:hover p{ bottom: 0;}
+.details_wrap{ width: 54%; height: 90%; position: absolute; top: -95%; opacity: 0; left: 23%; z-index: 1;}
+.details{ width: 95%; height: 100%; float: left; margin-right: 1%; overflow: hidden; border-radius: 5px; display: flex; justify-content: center; align-items: center;}
+.details_img{ width: 72%; height: 100%; overflow-y:auto;}
+.details_img::-webkit-scrollbar{ display:none;}
+.details_img img{ width: 100%; height: auto; overflow: hidden;}
+.details_js{ width: 28%; height: 100%; background-color: #ffffff}
+.present{ width: 85%; height: 100%; margin: 0 auto; color: #333333;}
+.present h2{ font-size: 1vw; line-height: 50px; border-bottom: 1px solid #D9D9D9; margin-top: 8%;}
+.present h3{ font-size: 0.8vw; line-height: 40px; color: #666666;}
+.present p{ font-size: 0.7vw; line-height: 20px; color: #A1A1A1;}
+.present a{ font-size: 0.7vw; line-height: 30px; color: #49C9DE;}
+#close{ width: 4%; display: block; float: left; cursor: pointer; transition: 0.5s;}
+#close:hover{ transform: rotate(180deg);}
+/*滚动条样式*/
+.scrollbar{ overflow-y: scroll;}
+#style-1::-webkit-scrollbar-track{ border-radius: 10px;}
+#style-1::-webkit-scrollbar{ width: 12px;}
+#style-1::-webkit-scrollbar-thumb{ border-radius: 10px; background-color: #333;}
+/*联系我们*/
+.contact{ width: 30%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.contact img{ border-radius: 5px; width: 30%; display: block;}
+.contact h1{ font-size: 1.1vw; margin: 2% 0;}
+.contact p{ font-size: 0.8vw; line-height: 30px;}
+
+/*音乐图标*/
+#music{ width: 2%; display: block; position: absolute; top: 1.5%; right: 1%; z-index: 99; cursor: pointer; animation: mymove 3s infinite linear;}
+@keyframes mymove {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*logo图片*/
+#logo{ width: 3%; display: block; position: absolute; top: 1.5%; left: 1%; z-index: 99; animation: mylogo 3s infinite linear;}
+@keyframes mylogo {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+#ba{ position: absolute; bottom: 30px; right: 20px; color: #ffffff; font-size: 0.7vw; z-index: 99;}
+/*媒体查询：兼容不同设备*/
+@media screen and (max-width:1000px){
+    .project_top li{ width: 20%; height: 50%;}
+    .case li{ width: 50%; height: 40%;}
+    .details_wrap{ width: 80%; left: 10%;}
+
+}
+/*banner and nav样式--start*/
+.imgwrap{ width: 500%; height: 100%; position: absolute; left: -100%; top: 0; z-index: 0;}
+.imgwrap img{ display: block; width: 20%; height: 100%; float: left;}
+.bannermenu{ width: 90px; height: 20px; position: absolute; bottom: 40px; left: 50%; margin-left: -45px; z-index: 10;}
+.bannermenu li{ width: 20px; height: 20px; border-radius: 50%; background: #fff; float: left; margin: 0 5px; cursor: pointer;}
+.bannermenu li:first-of-type{ background: #49C9DE;}
+.bannerscroll{ width: 98%; height: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; padding: 0 1%; z-index: 9;}
+.bannerscroll div{ color: #fff; font-size: 80px; cursor: pointer;}
+.bannerscroll div img{ width: 80px; height: 80px; opacity: 0.5; transition: 0.5s opacity;}
+.bannerscroll div img:hover{ opacity: 1;}
+#goright img{transform: rotate(180deg);}
+#hello{ position: absolute; top: 2.6%; left: 0; font-size: 1.3vw; text-align: center; width: 100%; color: #ffffff; z-index: 100;}
+.message{ position: absolute; top: 36%; left: 30%; z-index: 100; width: 40%; height: 24%; text-align: center;}
+.message h3{ font-size: 2vw; margin-bottom: 1vw;}
+.message p{ font-size: 0.8vw; margin-bottom: 1.5vw;}
+.message a{ width: 20%; height: 20%; background-color: #49C9DE; display: inline-block; overflow: hidden; border-radius: 3px; line-height: 280%; color: #ffffff; position: relative; font-size: 0.8vw;}
+.message a span{ width: 100%; height: 10%; position: absolute; bottom: 0; left: 0; background-color: #30bfd6;}
+/*banner and nav样式--end*/
+

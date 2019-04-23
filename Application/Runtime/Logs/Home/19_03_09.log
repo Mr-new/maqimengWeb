@@ -1,0 +1,104 @@
+[ 2019-03-09T16:10:24+08:00 ] 127.0.0.1 /index.php/Home/Index/details
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `my_main` WHERE ( m_id='1' ) LIMIT 1   [ RunTime:0.0093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2019-03-09T16:10:30+08:00 ] 127.0.0.1 /index.php/Home/Index/details
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `my_main` WHERE ( m_id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000258s ]
+
+[ 2019-03-09T16:10:36+08:00 ] 127.0.0.1 /index.php/Home/Index/details
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `my_main` WHERE ( m_id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000215s ]
+
+[ 2019-03-09T16:10:42+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0004s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main` WHERE ( m_type='1' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000193s ]
+
+[ 2019-03-09T16:10:42+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0011s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main` WHERE ( m_type='2' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000173s ]
+
+[ 2019-03-09T16:10:43+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0011s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main` WHERE ( m_type='3' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000174s ]
+
+[ 2019-03-09T16:10:43+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0014s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main` WHERE ( m_type='2' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000239s ]
+
+[ 2019-03-09T16:10:43+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0010s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main` WHERE ( m_type='1' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000184s ]
+
+[ 2019-03-09T16:10:44+08:00 ] 127.0.0.1 /index.php/Home/Index/probably
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `my_main` [ RunTime:0.0045s ]
+SQL: SELECT `m_id`,`m_title`,`m_minimg` FROM `my_main`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [8] Undefined index: m_maximg D:\code\maqimengWeb\Application\Home\Controller\IndexController.class.php 第 44 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000187s ]
+
